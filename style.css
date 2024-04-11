@@ -268,18 +268,18 @@ label {
   color: rgb(42, 42, 42);
 }
 .organization {
+  padding: 2rem 3rem;
   background-color: rgba(182, 181, 209, 0.141);
 }
 .organization > section {
-  padding: 2rem 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 .organization > section h1 {
- text-align: center;
- color: rgb(71, 71, 71);
+  text-align: center;
+  color: rgb(71, 71, 71);
 }
 .organization--imgwrapper {
   display: grid;
@@ -355,10 +355,10 @@ label {
     width: 200px;
   }
 }
-@media (max-width:665px) {
-    .organization--imgwrapper > div {
-        width: 150px;
-      }
+@media (max-width: 665px) {
+  .organization--imgwrapper > div {
+    width: 150px;
+  }
 }
 
 @media (max-width: 817px) {
@@ -581,7 +581,7 @@ label {
   .customerSupport p,
   .operations p,
   .research p {
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 0;
     margin-bottom: 15px;
   }
@@ -591,7 +591,7 @@ label {
   .customerSupport h2,
   .operations h2,
   .research h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .devunit h3,
   .produnit h3,
@@ -601,7 +601,7 @@ label {
   .research h3 {
     margin-top: 0;
     margin-bottom: 7px;
-    font-size: 17px;
+    font-size: 16px;
   }
   .organization {
     padding: 1rem;
@@ -615,8 +615,14 @@ label {
   }
   .organization > section h1 {
     font-size: 20px;
-    margin-top: 0;
-   }
+    margin-top: 30px;
+  }
+  .title {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 20px;
+    color: rgb(71, 71, 71);
+  }
 }
 
 #check:checked ~ ul {
