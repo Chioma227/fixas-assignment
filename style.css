@@ -1,10 +1,9 @@
 :root {
   --blue200: #222181;
-  --blue200-transparent: #23218153;
+  --blue200-transparent: #23218184;
   --blue100: #2b29a7;
   --blue50: #4e4dbb;
   --blue25: #4e4dbb;
-  /* --slate: #ded2ff; */
 }
 body {
   padding: 0;
@@ -199,6 +198,11 @@ label {
   padding: 25px 40px;
   background-color: var(--blue25);
 }
+
+.about--obj article p{
+ color: rgb(255, 255, 255);
+ font-weight: 100;
+}
 .about--obj div {
   height: 100%;
   background: rgb(117, 117, 117);
@@ -206,6 +210,7 @@ label {
 }
 .about--obj article h2 {
   text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 .contact--git {
@@ -247,6 +252,9 @@ label {
 .contact--git section article section div p {
   color: rgb(42, 42, 42);
   margin-bottom: 10px;
+}
+.contact--git section article section i {
+  color: rgb(42, 42, 42);
 }
 .contact--git section article section div a {
   color: rgb(53, 53, 53);
@@ -323,7 +331,7 @@ label {
   }
   .home--navbar ul li a {
     text-decoration: none;
-    color: var(--blue100);
+    color: white;
   }
   label {
     display: block;
@@ -407,6 +415,14 @@ label {
   }
   .home--navbar {
     padding: 20px;
+  }
+  .home--navbar ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  .navbar__other ul li a {
+    text-decoration: none;
+    color: white;
   }
   .home--herotext h3 {
     font-size: 35px;
