@@ -4,6 +4,7 @@
   --blue100: #2b29a7;
   --blue50: #4e4dbb;
   --blue25: #4e4dbb;
+  --bluelight: #7a78db;
 }
 body {
   padding: 0;
@@ -222,7 +223,7 @@ label {
   padding: 0 45px;
 }
 .contact--git > section {
-  background-color: var(--blue200-transparent);
+  background-color: var(--bluelight);
   padding: 30px 50px;
   box-shadow: 0px 7px 20px 0px rgba(143, 143, 143, 0.581);
   border-radius: 20px;
@@ -385,7 +386,7 @@ label {
     margin-top: 4rem;
   }
   .contact--git > section {
-    background-color: var(--blue200-transparent);
+    background-color: var(--bluelight);
     padding: 30px 20px;
     border-radius: 20px;
     width: fit-content;
