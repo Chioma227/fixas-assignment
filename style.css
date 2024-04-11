@@ -1,7 +1,7 @@
 :root {
   --blue200: #222181;
   --blue200-transparent: #23218184;
-  --blue100: #2b29a7;
+  --blue100: #571f92;
   --blue50: #4e4dbb;
   --blue25: #4e4dbb;
   --bluelight: #7a78db;
@@ -200,9 +200,9 @@ label {
   background-color: var(--blue25);
 }
 
-.about--obj article p{
- color: rgb(255, 255, 255);
- font-weight: 100;
+.about--obj article p {
+  color: rgb(255, 255, 255);
+  font-weight: 100;
 }
 .about--obj div {
   height: 100%;
@@ -266,6 +266,64 @@ label {
   margin-bottom: 40px;
   font-size: 17px;
   color: rgb(42, 42, 42);
+}
+.organization {
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* width: 100vw; */
+}
+.organization--imgwrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.organization--imgwrapper > div {
+  width: 300px;
+  position: relative;
+}
+.organization--imgwrapper > div > img {
+  max-width: 100%;
+  display: block;
+  transition: 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 7px 20px 0px rgba(143, 143, 143, 0.581);
+}
+.organization--imgwrapper > div > img:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+  box-shadow: 0px 7px 20px 0px rgba(55, 55, 55, 0.656);
+}
+.organization--imgwrapper :nth-child(1) {
+  grid-column: span 2;
+}
+.devunit h2,
+.produnit h2,
+.salesunit h2,
+.customerSupport h2,
+.operations h2,
+.research h2 {
+  text-align: center;
+}
+.devunit p,
+.produnit p,
+.salesunit p,
+.customerSupport p,
+.operations p,
+.research p {
+  font-size: 18px;
+  color: rgb(42, 42, 42);
+}
+
+.devunit div,
+.produnit div,
+.salesunit div,
+.customerSupport div,
+.operations div,
+.research div {
+  width: 50%;
 }
 
 /* media query */
@@ -476,7 +534,55 @@ label {
     background-color: var(--blue25);
   }
   .contact--git > section {
-   width: 100%;
+    width: 100%;
+  }
+  .devunit ,
+  .produnit ,
+  .salesunit ,
+  .customerSupport ,
+  .operations ,
+  .research  {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .devunit div,
+  .produnit div,
+  .salesunit div,
+  .customerSupport div,
+  .operations div,
+  .research div {
+    width: 100%;
+  }
+  .devunit p,
+  .produnit p,
+  .salesunit p,
+  .customerSupport p,
+  .operations p,
+  .research p {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .devunit h2,
+  .produnit h2,
+  .salesunit h2,
+  .customerSupport h2,
+  .operations h2,
+  .research h2 {
+    font-size: 20px;
+  }
+  .devunit h3,
+  .produnit h3,
+  .salesunit h3,
+  .customerSupport h3,
+  .operations h3,
+  .research h3 {
+    margin-top: 0;
+    margin-bottom: 7px;
+    font-size: 17px;
+  }
+  .organization {
+    padding: 1rem;
   }
 }
 
