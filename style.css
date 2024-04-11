@@ -268,12 +268,18 @@ label {
   color: rgb(42, 42, 42);
 }
 .organization {
+  background-color: rgba(182, 181, 209, 0.141);
+}
+.organization > section {
   padding: 2rem 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* width: 100vw; */
+}
+.organization > section h1 {
+ text-align: center;
+ color: rgb(71, 71, 71);
 }
 .organization--imgwrapper {
   display: grid;
@@ -296,9 +302,6 @@ label {
   transition: 0.4s;
   box-shadow: 0px 7px 20px 0px rgba(55, 55, 55, 0.656);
 }
-.organization--imgwrapper :nth-child(1) {
-  grid-column: span 2;
-}
 .devunit h2,
 .produnit h2,
 .salesunit h2,
@@ -306,6 +309,15 @@ label {
 .operations h2,
 .research h2 {
   text-align: center;
+  color: rgb(71, 71, 71);
+}
+.devunit h3,
+.produnit h3,
+.salesunit h3,
+.customerSupport h3,
+.operations h3,
+.research h3 {
+  color: rgb(71, 71, 71);
 }
 .devunit p,
 .produnit p,
@@ -314,7 +326,7 @@ label {
 .operations p,
 .research p {
   font-size: 18px;
-  color: rgb(42, 42, 42);
+  color: rgb(123, 122, 122);
 }
 
 .devunit div,
@@ -337,6 +349,16 @@ label {
     display: block;
     padding: 4rem 6rem;
   }
+}
+@media (max-width: 971px) {
+  .organization--imgwrapper > div {
+    width: 200px;
+  }
+}
+@media (max-width:665px) {
+    .organization--imgwrapper > div {
+        width: 150px;
+      }
 }
 
 @media (max-width: 817px) {
@@ -536,12 +558,12 @@ label {
   .contact--git > section {
     width: 100%;
   }
-  .devunit ,
-  .produnit ,
-  .salesunit ,
-  .customerSupport ,
-  .operations ,
-  .research  {
+  .devunit,
+  .produnit,
+  .salesunit,
+  .customerSupport,
+  .operations,
+  .research {
     width: 100%;
     margin-bottom: 3rem;
   }
@@ -584,6 +606,17 @@ label {
   .organization {
     padding: 1rem;
   }
+  .organization--imgwrapper > div {
+    width: 135px;
+  }
+  .organization--imgwrapper {
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .organization > section h1 {
+    font-size: 20px;
+    margin-top: 0;
+   }
 }
 
 #check:checked ~ ul {
